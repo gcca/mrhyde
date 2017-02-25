@@ -1,0 +1,33 @@
+{
+  "name": "mrhyde",
+  "version": "1.0.0",
+  "description": "Financial manager backend",
+  "main": "index.ts",
+  "dependencies": {
+    "express": "^4.14.1",
+    "mongoose": "^4.8.4"
+  },
+  "devDependencies": {
+    "ts-node": "^2.1.0",
+    "typescript": "^2.2.1"
+  },
+  "scripts": {
+    "start": "ts-node index.ts",
+    "test": "echo TODO"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcca/mrhyde.git"
+  },
+  "keywords": [
+    "financial",
+    "manager",
+    "backend"
+  ],
+  "author": "Team",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/gcca/mrhyde/issues"
+  },
+  "homepage": "https://github.com/gcca/mrhyde#readme"
+}
