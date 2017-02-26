@@ -1,21 +1,14 @@
-import express = require('express');
 import mongoose = require('mongoose');
+import autoIncrement = require('mongoose-auto-increment');
+import blueBird = require('bluebird');
 
-let app = express();
-
-mongoose.Promise = require('bluebird');
+mongoose.Promise(blueBird);
 
 let dbURI = 'mongodb://financial:financial@ds161069.mlab.com:61069/financial-manager-imo';
 
 mongoose.connect(dbURI);
 
-app.get('/', function(req, res) {
-  res.send('Hello World!');
-});
-
-app.listen(3000, function() {
-  console.log('Listening on port 3000!');
-});
+autoIncrement.initialize(mongoose.connection);
 
 mongoose.connection.on('connected', function () {
     console.log('Mongoose default connection open to ' + dbURI);
