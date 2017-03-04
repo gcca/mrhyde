@@ -14,7 +14,10 @@
     "typescript": "^2.2.1"
   },
   "scripts": {
-    "start": "ts-node index.ts",
+    "start": "npm run start:production",
+    "start:node": "ts-node index.ts",
+    "start:development": "env MONGODB_HOST='mongodb://localhost/financial-manager-imo' npm run start:node",
+    "start:production": "env MONGODB_HOST='mongodb://financial:financial@ds161069.mlab.com:61069/financial-manager-imo' npm run start:node",
     "test": "echo TODO"
   },
   "repository": {
