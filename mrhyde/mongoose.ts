@@ -1,6 +1,6 @@
 import mongoose = require('mongoose');
 
-import { settings } from './settings';
+import { settings } from 'mrhyde/settings';
 
 mongoose.Promise = require('bluebird');
 

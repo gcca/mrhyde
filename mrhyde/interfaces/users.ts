@@ -1,4 +1,4 @@
-import { app } from './app';
+import { app } from 'mrhyde/interfaces/app';
 
 
 app.post('/financial-api/v1/users', function(req, res) {});

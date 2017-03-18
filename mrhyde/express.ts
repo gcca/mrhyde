@@ -1,6 +1,6 @@
-import { app } from './interfaces/app';
+import { app } from 'mrhyde/interfaces/app';
 
-import './interfaces/users';
+import 'mrhyde/interfaces/users';
 
 
 export function express_init(): Promise<void> {

@@ -11,11 +11,12 @@
   "devDependencies": {
     "@types/node": "^7.0.5",
     "ts-node": "^2.1.0",
+    "tsconfig-paths": "^2.1.1",
     "typescript": "^2.2.1"
   },
   "scripts": {
     "start": "npm run start:production",
-    "start:node": "ts-node index.ts",
+    "start:node": "ts-node -r tsconfig-paths/register index.ts",
     "start:development": "env MONGODB_HOST='mongodb://localhost/financial-manager-imo' npm run start:node",
     "start:production": "env MONGODB_HOST='mongodb://financial:financial@ds161069.mlab.com:61069/financial-manager-imo' npm run start:node",
     "test": "echo TODO"
