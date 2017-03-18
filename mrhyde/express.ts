@@ -1,11 +1,6 @@
-import express = require('express');
+import { app } from './interfaces/app';
 
-let app = express();
-
-
-app.get('/', function(req, res) {
-    res.send('Hello World!');
-});
+import './interfaces/users';
 
 
 export function express_init(): Promise<void> {
